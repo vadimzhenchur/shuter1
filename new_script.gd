@@ -64,3 +64,4 @@ func _input(event):
 		#inst.transform.basis = ray.global_transform.basis
 		get_tree().get_root().add_child(inst)
 	
+

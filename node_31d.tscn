@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b43wx4xijoe2k"]
+
+[ext_resource type="PackedScene" uid="uid://cc1wyb5edh14l" path="res://cottage_blender.glb" id="1_mtuc3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_64f1e"]
+size = Vector3(14.8975, 7.40773, 9.72284)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="cottage_blender" parent="." instance=ExtResource("1_mtuc3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.10373, 0, 1.46192)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="cottage_blender"]
+transform = Transform3D(1, 0, 0, 0, 0.543409, 0.839468, 0, -0.839468, 0.543409, 0, 2.66088, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="cottage_blender"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.18855, 4.81079, -0.41711)
+shape = SubResource("BoxShape3D_64f1e")
